@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gift Box Maker</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"/>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+     
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header>Gift Box Maker!</header>
+  
+    <h2>Endless possibilities of gift boxes! (Use images or GIFs to create cool designs like this one <input type = "button" onClick="example()" value="here" id="here"/>)</h2>
+    <div class = "container">
+    <div class = "menu">
+      <h1>Cutzomize the gift!</h1>
+      <h3>Lid Color: <input type = "color" name="color1" id="color1" value=#ff0000 /> or <input type = "file" id="getval" /></h3>
+      <br>
+      <h3>Box Color: <input type = "color" name="color2" id="color2" value =#ffffff /> or <input type = "file" id="getval2" /></h3>
+      <br>
+      <h3>Strap Color:  <input type = "color" name="color3" id="color3" value=#008000 /> or <input type = "file" id="getval3"/></h3>
+      
+      <br>
+      <br>
+      <input type = "button" onClick="processData('color1', 'color2', 'color3')" value="Create!" id="submit" />
+    </div>
+    <img src = "arrow.png" id = "arrow">
+      
+   <div id="tridiv">
+     <div class="scene" style="-webkit-transform:rotateX(-25deg) rotateY(-490deg); -moz-transform:rotateX(-25deg) rotateY(-490deg); -ms-transform:rotateX(-25deg) rotateY(-490deg); transform:rotateX(-25deg) rotateY(-490deg); ">
+        <div class="shape cuboid-1 cub-1">
+          <div class="face ft"></div>
+          <div class="face bk"></div>
+          <div class="face rt"></div>
+          <div class="face lt"></div>
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+        </div>
+        <div class="shape cuboid-2 cub-2">
+          <div class="face ft"></div>
+          <div class="face bk"></div>
+          <div class="face rt"></div>
+          <div class="face lt"></div>
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+        </div>
+        <div class="shape cuboid-3 cub-3">
+          <div class="face ft"></div>
+          <div class="face bk"></div>
+          <div class="face rt"></div>
+          <div class="face lt"></div>
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+        </div>
+        <div class="shape cuboid-4 cub-4">
+          <div class="face ft"></div>
+          <div class="face bk"></div>
+          <div class="face rt"></div>
+          <div class="face lt"></div>
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,354 @@
+@font-face {
+  font-family: "main";
+  src: url("NickelodeonNF.ttf");
+}
+.container {
+  max-width: 960px;
+	width: 96%;
+	margin: auto;
+  height: 100%;
+}
+header {
+  font-size: 70px;
+  color: white;
+  height: 100px;
+  text-align: center;
+ 
+}
+
+h2{
+   text-align: center;
+   margin-top: -20px;
+}
+ 
+input {
+  margin-top: 20px;
+}
+ 
+.menu {
+   
+  background-image: url("snowflake.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
+  border-radius: 10px;
+  width: 53%;
+  padding: 40px;
+  margin-left: -200px;
+  box-shadow: 8px 8px 16px 1px lightgrey;
+  text-align: center;
+}
+h3 {
+  margin-left: 69px;
+}
+body {
+   font-family: "main";
+  background-image: url("background.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;   
+}
+#submit {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid red;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-bottom: 40px;
+
+}
+#submit:hover {
+  background-color: red;
+  color: white;
+}
+#color1, #color2, #color3 {
+  border: none;
+  background: 0;
+}
+#arrow {
+  width: 100px;
+  position: relative;
+  left: 430px;
+  bottom: 300px;
+}
+#here {
+  margin-left: -10px;
+  margin-right: -5px;
+  margin-top: -4px;
+  border: none;
+  padding: none;
+  background: none;
+  font-family: "main";
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: underline;
+}
+/* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */ 
+#tridiv {
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  position: absolute;
+  overflow: hidden;
+  width: 35%;
+  height: 66.5%;
+   background-image: url("snowflake.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+  border-radius: 10px; 
+  font-size: 200%;
+  margin-top: -670px;
+  margin-left: 570px;
+  padding: 40px;
+  box-shadow: 8px 8px 16px 1px lightgrey;
+}
+.face {
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.scene, .shape, .face, .face-wrapper, .cr {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  
+}
+.scene {
+  width: 80em;
+  height: 80em;
+  top: 50%;
+  left: 50%;
+  margin: -40em 0 0 -40em;
+}
+.shape {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  -webkit-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+          transform-origin: 50%;
+}
+.face, .face-wrapper {
+  overflow: hidden;
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  /* hidden by default, prevent blinking and other weird rendering glitchs */
+}
+.face {
+  background-size: 100% 100%!important;
+  background-position: center;
+}
+.face-wrapper .face {
+  left: 100%;
+  width: 100%;
+  height: 100%
+}
+.photon-shader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+.side {
+  left: 50%;
+}
+.cr, .cr .side {
+  height: 100%;
+}
+[class*="cuboid"] .ft, [class*="cuboid"] .bk {
+  width: 100%;
+  height: 100%;
+}
+[class*="cuboid"] .bk {
+  left: 100%;
+}
+[class*="cuboid"] .rt {
+  -webkit-transform: rotateY(-90deg) translateX(-50%);
+          transform: rotateY(-90deg) translateX(-50%);
+}
+[class*="cuboid"] .lt {
+  -webkit-transform: rotateY(90deg) translateX(-50%);
+          transform: rotateY(90deg) translateX(-50%);
+}
+[class*="cuboid"] .tp {
+  -webkit-transform: rotateX(90deg) translateY(-50%);
+          transform: rotateX(90deg) translateY(-50%);
+}
+[class*="cuboid"] .bm {
+  -webkit-transform: rotateX(-90deg) translateY(-50%);
+          transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="cuboid"] .lt {
+  left: 100%;
+}
+[class*="cuboid"] .bm {
+  top: 100%;
+}
+/* .cub-1 styles */
+.cub-1 {
+  -webkit-transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:5em;
+  height:5em;
+  margin:-2.5em 0 0 -2.5em;
+}
+.cub-1 .ft {
+  -webkit-transform:translateZ(2.5em);
+          transform:translateZ(2.5em);
+}
+.cub-1 .bk {
+  -webkit-transform:translateZ(-2.5em) rotateY(180deg);
+          transform:translateZ(-2.5em) rotateY(180deg);
+}
+.cub-1 .rt, .cub-1 .lt {
+  width:5em;
+  height:5em;
+}
+.cub-1 .tp, .cub-1 .bm {
+  width:5em;
+  height:5em;
+}
+.cub-1 .face {
+  background-color:#FFFFFF;
+  background-image: url("");
+}
+/* .cub-2 styles */
+.cub-2 {
+  -webkit-transform:translate3D(0em, -2.0625em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          transform:translate3D(0em, -2.0625em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:5.5em;
+  height:1.5em;
+  margin:-0.75em 0 0 -2.75em;
+}
+.cub-2 .ft {
+  -webkit-transform:translateZ(2.75em);
+          transform:translateZ(2.75em);
+}
+.cub-2 .bk {
+  -webkit-transform:translateZ(-2.75em) rotateY(180deg);
+          transform:translateZ(-2.75em) rotateY(180deg);
+}
+.cub-2 .rt, .cub-2 .lt {
+  width:5.5em;
+  height:1.5em;
+}
+.cub-2 .tp, .cub-2 .bm {
+  width:5.5em;
+  height:5.5em;
+}
+.cub-2 .face {
+  background-color:red;
+  background-image: url("");
+}
+/* .cub-3 styles */
+.cub-3 {
+  -webkit-transform:translate3D(0em, -0.1875em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          transform:translate3D(0em, -0.1875em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:5.5em;
+  height:5.5em;
+  margin:-2.75em 0 0 -2.75em;
+}
+.cub-3 .ft {
+  -webkit-transform:translateZ(0.5em);
+          transform:translateZ(0.5em);
+}
+.cub-3 .bk {
+  -webkit-transform:translateZ(-0.5em) rotateY(180deg);
+          transform:translateZ(-0.5em) rotateY(180deg);
+}
+.cub-3 .rt, .cub-3 .lt {
+  width:1em;
+  height:5.5em;
+}
+.cub-3 .tp, .cub-3 .bm {
+  width:5.5em;
+  height:1em;
+}
+.cub-3 .face {
+  background-color:#008000;
+  background-image: url("");
+}
+/* .cub-4 styles */
+.cub-4 {
+  -webkit-transform:translate3D(-0.0625em, -0.25em, 0em) rotateX(-360deg) rotateY(-90deg) rotateZ(-90deg);
+          transform:translate3D(-0.0625em, -0.25em, 0em) rotateX(-360deg) rotateY(-90deg) rotateZ(-90deg);
+  opacity:1;
+  width:5.5em;
+  height:5.5em;
+  margin:-2.75em 0 0 -2.75em;
+}
+.cub-4 .ft {
+  -webkit-transform:translateZ(0.5em);
+          transform:translateZ(0.5em);
+}
+.cub-4 .bk {
+  -webkit-transform:translateZ(-0.5em) rotateY(180deg);
+          transform:translateZ(-0.5em) rotateY(180deg);
+}
+.cub-4 .rt, .cub-4 .lt {
+  width:1em;
+  height:5.5em;
+}
+.cub-4 .tp, .cub-4 .bm {
+  width:5.5em;
+  height:1em;
+}
+.cub-4 .face {
+  background-color:green;
+  background-image: url("");
+}
+
+@media screen and (max-width: 420px) {
+  header {
+    font-size: 50px;
+    position: relative;
+    left: 100px;
+  }
+   
+  h2 {
+    font-size: 30px;
+    color: red;
+    position: relative;
+    left: 100px;
+  }
+  input {
+    font-size: 15px;
+  }
+  .menu {
+    border-radius: 10px;
+    width: 120%;
+    height: 600px;
+    padding: 40px;
+    margin-left: 20px;
+    box-shadow: 8px 8px 16px 1px lightgrey;
+    text-align: center;
+  }
+  
+  #tridiv {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 80%;
+  }
+  body {
+   font-family: "main";
+  background-image: url("background.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   repeat;
+    background-position: center center;   
+  }
+  #arrow {
+    visibility: hidden;
+  }
+  
+}
